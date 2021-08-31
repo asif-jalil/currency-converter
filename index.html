@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazing Currency Converter</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-5 col-md-7">
+                <div class="card border-0">
+                    <div class="card-header">
+                        <img src="image/money-bag.svg" alt="">
+                        <h3>Currency Converter</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4 class="card-title text-center">From</h4>
+                                <input type="text" id="fromAmount" placeholder="Enter Currency">
+                                <div class="input select">
+                                    <span><i class="fas fa-sort-down"></i></span>
+                                    <select id="fromCurrency">
+                                        <!-- <option value="bdt">BDT</option>
+                                        <option value="bdt">USD</option>
+                                        <option value="bdt">BDT</option> -->
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h4 class="card-title text-center">To</h4>
+                                <input type="text" readonly id="toAmount" placeholder="Enter Currency">
+                                <div class="input select">
+                                    <span><i class="fas fa-sort-down"></i></span>
+                                    <select id="toCurrency">
+                                        <!-- <option value="bdt">BDT</option>
+                                        <option value="bdt">BDT</option>
+                                        <option value="bdt">BDT</option> -->
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="currency-rate text-center mt-3">
+                            <h4 id="currencyRate"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="toast-container position-absolute top-0 end-0 p-3">
+        <div class="toast align-items-center" id="alertToast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body" id="alertMsg">
+                    Alert Text will goes here
+                </div>
+                <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js" type="module"></script>
+</body>
+
+</html>

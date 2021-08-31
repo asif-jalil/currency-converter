@@ -1,0 +1,90 @@
+body {
+    background: #3494E6;
+    background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6);
+    background: linear-gradient(to right, #EC6EAD, #3494E6);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    box-shadow: 0 1rem 3rem 0.5rem rgb(0 0 0 / 40%) !important;
+    border-radius: 25px;
+    overflow: hidden;
+    width: 500px;
+}
+
+.card-header {
+    background-color: transparent;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.card-header img {
+    max-width: 50px;
+    margin-bottom: 15px;
+}
+
+.card-header h3 {
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+.card-title {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+input[type=text],
+textarea,
+.select {
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, .225);
+    border-radius: 30px;
+    padding: 6px 15px;
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+input:read-only {
+    background: #e0e0e0;
+}
+
+.select {
+    position: relative;
+    padding: 0;
+}
+
+.select span {
+    position: absolute;
+    z-index: 1;
+    right: 8px;
+    top: 3px;
+    font-size: 15px;
+    color: rgb(133, 133, 133);
+}
+
+.select select {
+    padding: 6px 15px;
+    color: rgb(133, 133, 133);
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    width: 100%;
+    appearance: none;
+    position: relative;
+    z-index: 2;
+    background: transparent;
+}
+
+.toast-body {
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.toast-body i {
+    color: rgb(235, 39, 4);
+}
